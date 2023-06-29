@@ -6,6 +6,7 @@ class NubbinBattery(Battery):
     """
     A type of car battery, evidently.
     """
+
     def __init__(self, before: date, now: date):
         self.last_service_date: date = before
         self.current_date: date = now

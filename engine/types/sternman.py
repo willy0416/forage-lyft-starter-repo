@@ -7,7 +7,7 @@ class SternmanEngine(Engine):
     """
 
     def __init__(self, light: bool):
-        self.warning_light_on = light
+        self.warning_light_on: bool = light
 
     def needs_service(self) -> bool:
         """
