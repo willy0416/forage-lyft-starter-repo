@@ -5,6 +5,10 @@ class Engine(ABC):
     """
     Abstract class to be inherited by all engines.
     """
+
     @abstractmethod
     def needs_service(self) -> bool:
+        """
+        Determines if this engine is in need of service.
+        """
         pass
