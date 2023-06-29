@@ -7,4 +7,7 @@ class Battery(ABC):
     """
     @abstractmethod
     def needs_service(self) -> bool:
+        """
+        Determines if this battery is in need of service.
+        """
         pass
