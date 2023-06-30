@@ -16,5 +16,5 @@ class SpindlerBattery(Battery):
         Determines if this battery is in need of service.
         """
         # self.current_date = datetime.now()
-        last_viable_date: int = self.last_service_date.toordinal() + (365 * 2)
+        last_viable_date: int = self.last_service_date.toordinal() + (365 * 3)
         return self.current_date.toordinal() >= last_viable_date
